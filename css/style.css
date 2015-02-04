@@ -1,0 +1,112 @@
+/*************************************
+GENERAL
+**************************************/
+
+*{
+	font-family:"Krungthep", sans-serif;
+	color:white;
+
+}
+
+html{
+	background-color:#12233B;
+/*	border:yellow 2px dotted;*/
+}
+
+body{
+	background-color:transparent;
+}
+
+#main{
+	padding:100px 5% 40px 5%;
+}
+
+.testing{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:auto;
+}
+
+/*************************************
+CONSOLE
+**************************************/
+.console{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+}
+.console-border{
+	position:absolute;
+	background-color:#272822;
+}
+
+.top-bar{
+	position:absolute;
+	width:100%;
+	height:80px;
+}
+.left-bar{
+	width:3%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.right-bar{
+	width:3%;
+	height:100%;
+	top:0;
+	right:0;
+}
+.bottom-bar{
+	height:50px;
+	width:100%;
+	bottom:0;
+	left:0;
+}
+.corner{
+	position:absolute;
+	height:50px;
+	width:50px;
+	background-color:transparent;
+}
+
+.top-left{
+	top:80px;
+	left:3%;
+	background:transparent;
+	border:solid 10px #272822;
+	border-top-left-radius: 50px;
+}
+
+/*************************************
+STARS
+**************************************/
+
+.stars{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(../img/stars.png) 0 0 / auto;
+}
+
+/*************************************
+IMAGES
+**************************************/
+.robot-main{
+	width:40%;
+	min-width:250px;
+	height:auto;
+}
+
+/*************************************
+FONTS
+**************************************/
+@font-face {
+  font-family: "Krungthep";
+  src: url(../fonts/Krungthep.ttf) format("truetype");
+}
