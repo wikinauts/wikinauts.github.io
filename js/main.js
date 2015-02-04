@@ -1,22 +1,23 @@
 $(document).ready(function() {
 
 	$(document).on("scroll",stars);
-	// $(document).on("scroll",console);
-
+	$(window).resize(function () {
+    	stars();
+	});
 });
 
 function stars(event){
 	var scrollPos = $(document).scrollTop();
 	var scrollPosHalf = scrollPos/2;
 	var scrollPosQuarter = scrollPos/4;
-	var bodyHeight = $(".testing").height();
+	var bodyWidth = $("body").width();
+	if ( bodyWidth > 700){
+		var bodyHeight = $(".desktop").height();
+	}
+	else{
+		var bodyHeight = $(".mobile").height();
+	}
 	var stars = $(".stars");
 	stars.css("top",scrollPosQuarter).css("height",bodyHeight-scrollPosQuarter);
-	var console = $(".console");
-	console.css("height",bodyHeight);
-
-}
-
-function console(event){
 
 }
