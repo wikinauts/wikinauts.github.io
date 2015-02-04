@@ -123,7 +123,7 @@ FONTS
 MEDIA QUERIES
 **************************************/
 
-@media all and (min-width: 701){
+@media all and (min-width: 731){
 	.destop{
 		display:block;
 	}
@@ -132,7 +132,7 @@ MEDIA QUERIES
 	}
 }
 
-@media (min-width: 0px) and (max-width: 700px){
+@media (min-width: 0px) and (max-width: 730px){
 	.desktop{
 		display:none;
 	}
