@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	stars(event);
 	$(document).on("scroll",stars);
 	$(window).resize(function () {
     	stars();
