@@ -1,9 +1,10 @@
 $(document).ready(function() {
 	$(".stars").css("height",$("body").height());
-	// $(document).on("scroll",stars);
-	// $(window).resize(function () {
- //    	stars();
-	// });
+	images();
+	$(document).on("scroll",stars);
+	$(window).resize(function () {
+    	stars();
+	});
 });
 
 function stars(event){
@@ -11,13 +12,11 @@ function stars(event){
 	var scrollPosHalf = scrollPos/2
 	var scrollPosQuarter = scrollPos/4
 	var bodyWidth = $("body").width()
-	var bodyHeight = 2000
+	var bodyHeight = $("body").height()
 	var stars = $(".stars")
 	var video = $(".video")
-	// video.css("height",0.5625*bodyWidth*0.8).css("width",bodyWidth*0.8)
+	video.css("height",0.5625*bodyWidth*0.8).css("width",bodyWidth*0.8)
 	stars.css("top",scrollPosQuarter).css("height",bodyHeight-scrollPosQuarter)
-
-
 	// if ( bodyWidth > 730){
 	// 	var bodyHeight = $(".desktop").height();
 	// 	stars.css("top",scrollPosQuarter).css("height",bodyHeight-scrollPosQuarter);
@@ -26,6 +25,9 @@ function stars(event){
 	// 	var bodyHeight = $(".mobile").height();
 	// 	stars.css("top",0).css("height",bodyHeight);
 	// }
+}
 
-
+function images(){
+	var image = $( ".circle1 p:nth-child(0)").text()
+	console.log(image);
 }
