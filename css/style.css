@@ -326,7 +326,7 @@ FONTS
 MEDIA QUERIES
 **************************************/
 
-@media (max-width: 992px){
+@media (min-width: 0px) and (max-width: 992px){
 	.arrow{
 		-moz-transform: rotate(90deg);
 		    -ms-transform: rotate(90deg); 
@@ -344,11 +344,11 @@ MEDIA QUERIES
 	.desc_left, .desc_right{
 		text-align:center;
 	}
-}
+/*}
 
-@media (min-width: 0px) and (max-width: 767px){
+@media (min-width: 0px) and (max-width: 992px){*/
 	.phone-panel-1{
-		padding-top:10px;
+		padding-top:75px;
 	}
 	.phone{
 		height:100%;
