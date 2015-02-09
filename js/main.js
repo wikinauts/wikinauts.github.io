@@ -1,25 +1,25 @@
 $(document).ready(function() {
 	$(".stars").css("height",$("body").height());
-	// var tid =setInterval(cycle2,3000);
 	var last = -1
-	// var firstTick = setTimeout(function(){
-	// 	change1(last+1,last+2)
-	// },2000)
 	var ticker = setInterval(function(){
 		last++;
 		next = last + 1;
 		last = (last %8);
 		next = (next %8);
 		change2(last+1,next+1);
-		console.log(last + " " + next);
 		setTimeout(function(){
 			change1(last+1,next+1)
 		},3000)
 	},6000)
-	$(document).on("scroll",stars);
-	$(window).resize(function () {
+	if($(window).width() >= 992){
+		$(document).on("scroll",stars);
+		$(window).resize(function () {
     	stars();
-	});
+		});
+	}
+	else{
+		$(".stars").css("height",$("body").height());
+	}
 });
 
 function stars(event){
@@ -29,17 +29,12 @@ function stars(event){
 	var bodyWidth = $("body").width();
 	var bodyHeight = $("body").height();
 	var stars = $(".stars");
-	var video = $(".video");
-	video.css("height",0.5625*bodyWidth*0.8).css("width",bodyWidth*0.8)
-	stars.css("top",scrollPosQuarter).css("height",bodyHeight-scrollPosQuarter)
-	// if ( bodyWidth > 730){
-	// 	var bodyHeight = $(".desktop").height();
-	// 	stars.css("top",scrollPosQuarter).css("height",bodyHeight-scrollPosQuarter);
-	// }
-	// else{
-	// 	var bodyHeight = $(".mobile").height();
-	// 	stars.css("top",0).css("height",bodyHeight);
-	// }
+	if ( bodyWidth > 992){
+		stars.css("top",scrollPosHalf).css("height",bodyHeight-scrollPosHalf);
+	}
+	else{
+		stars.css("top",0).css("height",bodyHeight);
+	}
 }
 
 function cycle2(){

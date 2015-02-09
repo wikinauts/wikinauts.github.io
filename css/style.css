@@ -15,8 +15,7 @@ body{
 }
 
 #main{
-	padding:75px 5% 40px 5%;
-
+	padding:75px 0 40px 0;
 }
 
 .testing{
@@ -27,7 +26,7 @@ body{
 	height:auto;
 }
 
-.mobile{
+.mobilez{
 	display:none;
 }
 
@@ -40,7 +39,7 @@ body{
 }
 
 .white h3, .black h3{
-	padding:20px 0 20px 0;
+	padding:0 0 20px 0;
 }
 
 .black{
@@ -48,24 +47,45 @@ body{
 }
 
 .button img{
-	width:175px;
+	width:190px;
 	height:auto;
 	position:relative;
+}
+
+.google{
+	padding-top:10px;
+}
+
+.apple{
+	color:#FFFFFF;
+	background-color:#000000;
+	width:175px;
+	height:58px;
+	margin:auto;
+	border-radius:8px;
+}
+.apple h4{
+	padding-top:9px;
 }
 
 /*************************************
 VIDEO
 **************************************/
+.video_container{
+	position:relative;
+	margin:auto;
+	max-width: 1100px;
+}
+
 .video{
 	margin:auto;
 	position:relative;
 	width:100%;
 	max-width:1000px;
-/*	border:red 2px dotted;*/
 	height:0;
-	margin-top:50px;
+	margin-top:15px;
+	margin-bottom:15px;
 	padding-bottom:56.25%;
-
 }
  
 iframe{
@@ -93,27 +113,23 @@ PHONE FRAME TOP
 .phone-panel-1{
 	position:relative;
 	margin-top:25px;
-	padding:100px 5% 75px 5%;
+	padding:75px 0 75px 0;
 	background-color:#DBECFF;
-
 }
 
 .phone-panel-1 h1{
-	padding-top:25px;
+	padding-top:15px;
 }
 
 .phone-panel-2{
 	position:relative;
 	background-color:#DBECFF;
 	height:300px;
-	padding:0 5% 50px 5%;
-	/*padding-bottom:50px;*/
-
+	padding:0 0 50px 0;
 }
 
 .phone{
-	height:200px;
-
+	height:150px;
 }
 
 .phone2{
@@ -124,7 +140,7 @@ PHONE FRAME TOP
 .phone img{
 	position:relative;
 	margin:auto;
-	height:500px;
+	height:600px;
 	width:auto;
 	padding:20px;
 }
@@ -141,15 +157,18 @@ PHONE FRAME TOP
 .robot_green, .robot_blue{
 	position:relative;
 }
+
 .robot_green img, .robot_blue img{
 	position:absolute;
 	height:225px;
 	width:auto;
 	top:-275px;
 }
+
 .robot_green img{
 	left:30px;
 }
+
 .robot_blue img{
 	right:30px;
 }
@@ -157,12 +176,8 @@ PHONE FRAME TOP
 /*************************************
 DESCRIPTION
 **************************************/
-.description{
-	padding-left:5%;
-	padding-right:5%;
-}
 .mission{
-	padding-top:200px
+	padding-top:150px
 }
 
 .mission_title{
@@ -191,9 +206,15 @@ DESCRIPTION
 .desc_right{
 	text-align:left;
 }
+
+.textbox{
+	height:100px;
+}
+
 .textbox h3{
 	font-size:30px;
 }
+
 .arrow{
 	top:250px;
 }
@@ -205,7 +226,7 @@ DESCRIPTION
 
 .levels{
 	position:relative;
-	height:500px;
+	height:425px;
 }
 
 .arrow2{
@@ -234,9 +255,6 @@ DESCRIPTION
     -webkit-border-radius: 100%;
     border-radius: 100%;
     background: transparent;
-   /* box-shadow: 16px 16px 32px rgba(50,50,50,1), inset 16px 16px 32px rgba(100,100,100,1);
-    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0,0,0,.5);  
-    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0,0,0,.5);*/
 }
 
 .circle1, .circle2{
@@ -257,7 +275,6 @@ DESCRIPTION
 	border:8px solid #aaaaaa;
 	z-index:2;
 }
-
 
 .show{
 	display:block;
@@ -298,15 +315,14 @@ DESCRIPTION
 .bottom_title{
 	padding-top:50px;
 }
+
 .bottom_title h1{
 	font-size:40px;
 }
 
-
 /*************************************
 STARS
 **************************************/
-
 .stars{
 	position:absolute;
 	top:0;
@@ -315,7 +331,6 @@ STARS
 	height:100%;
 	background: url(../img/stars.png) 0 0 / auto;
 }
-
 
 /*************************************
 FONTS
@@ -330,6 +345,10 @@ MEDIA QUERIES
 **************************************/
 
 @media (min-width: 0px) and (max-width: 992px){
+	.mobile_hide{
+		display:none;
+	}
+
 	.arrow{
 		-moz-transform: rotate(90deg);
 		    -ms-transform: rotate(90deg); 
@@ -338,52 +357,84 @@ MEDIA QUERIES
 		 top:0;
 		 padding:20px;
 	}
+
 	.arrow img{
 		margin:10px 0 10px 0;
 	}
+
 	.mission{
 		padding-top:50px;
 	}
+
 	.desc_left, .desc_right{
 		text-align:center;
 	}
-/*}
 
-@media (min-width: 0px) and (max-width: 992px){*/
+	.button{
+		text-align: center;
+	}
+
 	.phone-panel-1{
 		padding-top:75px;
 	}
+
 	.phone{
 		height:100%;
 	}
+
 	.phone img, .phone2 img{
-		height: 450px;
+		height:400px;
 		width:auto;
 	}
+
 	.mission{
 		padding-top:50px;
 	}
+
 	.mission_title{
+		padding-bottom:20px;
 		margin-top:0;
 	}
-	.phone-panel-2{
-		height:500px;
-		padding-top:275px;
+
+	.mission_title h3{
+		margin-top:0;
+		padding:0;
+		font-size:20px;
+		line-height:30px;
 	}
 
-	.robot_green img{
-		height:150px;
-		width:auto;
-		top:-130px;
-		left:10px;
+	.title h1{
+		font-size:35px;
 	}
-	.robot_blue img{
-		height:150px;
-		width:auto;
-		top:-130px;
-		right:10px;
+
+	.textbox{
+		height:60px;
 	}
+
+	.textbox h3{
+		margin-top:0;
+		padding:0;
+		font-size:20px;
+		line-height:30px;
+	}
+
+	.phone-panel-1{
+		padding-top:0;
+		padding-bottom:25px;
+	}
+
+	.phone-panel-2{
+		height:475px;
+		padding-top:200px;
+	}
+
+	.robot_blue img, .robot_green img{
+		display:none;
+	}
+
 	.bottom_title{
 		padding-top:0;
+		padding-bottom:15px;
 	}
+	
 }

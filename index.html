@@ -8,12 +8,10 @@
 </head>
 <body>
 	<div class="stars"></div>
-	<div class="logo white">
-		<h2>COSMO THE WIKINAUT</h2>
-	</div>
-	<div class="video">
-	  <iframe src="https://www.youtube.com/embed/UcEBfeLA5Oo?v=UcEBfeLA5Oo?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-	</div>
+	<div class="video_container">
+		<div class="video">
+		 	 <iframe src="//player.vimeo.com/video/119089066" width="500" height="281" frameborder="0" badge="0" color="#DBECFF" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/119089066">Wikinaut Promo Video</a> from <a href="http://vimeo.com/user37230887">cosmo wikinaut</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
 	</div>
 	<div class="phone-panel-1">
 		<div class="container">
@@ -30,26 +28,31 @@
 				
 			</div>
 			<div class="row">
-				<div class="col-md-6 text-center black">
+				<div class="col-md-1"></div>
+				<div class="col-md-5 text-center black">
 					<h1>Cosmo the Wikinaut</h1>
 					<h3>A mobile take on the <br> popular Wikipedia Game</h3>
 				</div>
-				<div class="col-md-6 text-center">
+				<div class="col-md-5 text-center">
 					<div class="phone">
 						<img src="img/phone.png">
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-xs-6 text-right button">
-					<a href = "http://www.google.com">
-						<img src="img/button_app_store_clear.png" onmouseover="this.src='img/button_app_store_black.png'" onmouseout="this.src='img/button_app_store_clear.png'">
+				<div class="col-md-1"></div>
+				<div class="col-md-5 text-center google button">
+					<a href = "https://play.google.com/store/apps/details?id=com.beep_boop.Beep&hl=en">
+						<img src="img/google.png">
 					</a>
 				</div>
-				<div class="col-md-3 col-xs-6 text-left button">
-					<a href = "http://www.google.com">
-						<img src="img/button_google_play_clear.png" onmouseover="this.src='img/button_google_play_black.png'" onmouseout="this.src='img/button_google_play_clear.png'">
-					</a>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-5 text-center button">
+					<div class="apple">
+						<h4>Coming soon to <br> the App Store!</h4>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -98,7 +101,7 @@
 				<div class="textbox">
 					<h3>We took all the links<br>from articles...</h3>
 				</div>
-				<img src="img/description1.png">
+				<img src="img/description1.png" class="mobile_hide">
 			</div>
 			<div class="col-md-2 text-center arrow">
 				<img src="img/arrow.png">
@@ -107,10 +110,12 @@
 				<div class="textbox">
 					<h3>...and made them scrollable</h3>
 				</div>
-				<img src="img/description2.png">
+				<img src="img/description2.png" class="mobile_hide">
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md-1">
+			</div>
 			<div class="col-md-5 text-center">
 				<div class="phone2">
 					<img src="img/phone2.png">
@@ -123,28 +128,32 @@
 			<div class="row">
 				<div class="col-md-5 text-center">
 				</div>
-				<div class="col-md-6 text-center phone-panel-text black bottom_title">
+				<div class="col-md-5 text-center phone-panel-text black bottom_title">
 					<h1>Download today!</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-5">
 				</div>
-				<div class="col-md-3 col-xs-6 text-right button">
-					<a href = "http://www.google.com">
-						<img src="img/button_app_store_clear.png" onmouseover="this.src='img/button_app_store_black.png'" onmouseout="this.src='img/button_app_store_clear.png'">
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-6 text-left button">
-					<a href = "http://www.google.com">
-						<img src="img/button_google_play_clear.png" onmouseover="this.src='img/button_google_play_black.png'" onmouseout="this.src='img/button_google_play_clear.png'">
+				<div class="col-md-5 text-center google button">
+					<a href = "https://play.google.com/store/apps/details?id=com.beep_boop.Beep&hl=en">
+						<img src="img/google.png">
 					</a>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-5">
+				</div>
+				<div class="col-md-5 text-center button">
+					<div class="apple">
+						<h4>Coming soon to <br> the App Store!</h4>
+					</div>
+				</div>
+			</div>			
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/main.js" ></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> -->
-<script src="js/main.js" ></script>
+
 </html>
